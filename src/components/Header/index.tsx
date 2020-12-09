@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 
 import logo from '../../assets/images/logo.png';
-import magnifyingGlass from '../../assets/images/SVG/magnifying-glass.svg';
-import bookmark from '../../assets/images/SVG/bookmark.svg';
-import chat from '../../assets/images/SVG/chat.svg';
 import user from '../../assets/images/user.jpg';
+import { ReactComponent as MagnifyingGlassSvg } from '../../assets/images/SVG/magnifying-glass.svg';
+import { ReactComponent as BookmarkSvg } from '../../assets/images/SVG/bookmark.svg';
+import { ReactComponent as ChatSvg } from '../../assets/images/SVG/chat.svg';
+
 import './index.scss';
 
 const Header: FC = () => {
@@ -18,16 +19,16 @@ const Header: FC = () => {
           placeholder="Search hotels"
         />
         <button className="search__button">
-          <img src={magnifyingGlass} alt="magnifying-glass" />
+          <MagnifyingGlassSvg />
         </button>
       </form>
       <nav className="user-nav">
         <div className="user-nav__icon-box">
-          <img className="user-nav__icon" src={bookmark} alt="bookmark" />
+          <BookmarkSvg className="user-nav__icon" />
           <span className="user-nav__notification">7</span>
         </div>
         <div className="user-nav__icon-box">
-          <img className="user-nav__icon" src={chat} alt="chat" />
+          <ChatSvg className="user-nav__icon" />
           <span className="user-nav__notification">13</span>
         </div>
         <div className="user-nav__user">
