@@ -10,11 +10,11 @@ import './index.scss';
 const Header: FC = () => {
   return (
     <header className="header">
-      <img src={logo} alt="logo" className="logo" />
-      <form action="#" className="search">
+      <img className="logo" src={logo} alt="logo" />
+      <form className="search" action="#">
         <input
-          type="text"
           className="search__input"
+          type="text"
           placeholder="Search hotels"
         />
         <button className="search__button">
@@ -23,15 +23,15 @@ const Header: FC = () => {
       </form>
       <nav className="user-nav">
         <div className="user-nav__icon-box">
-          <img src={bookmark} alt="bookmark" className="user-nav__icon" />
+          <img className="user-nav__icon" src={bookmark} alt="bookmark" />
           <span className="user-nav__notification">7</span>
         </div>
         <div className="user-nav__icon-box">
-          <img src={chat} alt="chat" className="user-nav__icon" />
+          <img className="user-nav__icon" src={chat} alt="chat" />
           <span className="user-nav__notification">13</span>
         </div>
         <div className="user-nav__user">
-          <img src={user} alt="user" className="user-nav__user-photo" />
+          <img className="user-nav__user-photo" src={user} alt="user" />
           <span className="user-nav__user-name">John</span>
         </div>
       </nav>
